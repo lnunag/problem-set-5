@@ -257,16 +257,18 @@ function guess() {
       if (value > answer){
         alert('Too large. Guess lower.');
         continue;
+        attempts++;
       }
 
       if (value < answer) {
         alert('Too small. Guess higher.');
         continue;
+        attempts++;
       }
 
     } while (value !== answer);
         var div = document.getElementById("guess-output");
-        div.innerHTML = "You've guessed it!";
+        div.innerHTML = "You've guessed it!" + "<br/>" + "You've tried " + attempts + " times.";
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
