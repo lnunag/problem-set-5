@@ -265,6 +265,8 @@ function guess() {
       }
 
     } while (value !== answer);
+        var div = document.getElementById("guess-output");
+        div.innerHTML = "You've guessed it!";
   ////////////////// DO NOT MODIFY
   check('guess'); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
